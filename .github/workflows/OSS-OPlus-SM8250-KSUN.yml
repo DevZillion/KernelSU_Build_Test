@@ -1,4 +1,4 @@
-name: OSS OPlus SM8650 Kernel
+name: OSS OPlus SM8650 KernelSU Next
 
 on:
   workflow_dispatch:
