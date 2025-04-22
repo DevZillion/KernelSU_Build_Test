@@ -42,7 +42,7 @@ jobs:
 
     - name: Setup KernelSU
       run: |
-        cd $GITHUB_WORKSPACE
+        cd kernel_workspace/kernel_platform/common
         curl -LSs "https://raw.githubusercontent.com/rifsxd/KernelSU-Next/next/kernel/setup.sh" | bash -
         if [ ! -e build/build.sh ]; then
           GLIBC_VERSION=$(ldd --version 2>/dev/null | head -n 1 | awk '{print $NF}')
